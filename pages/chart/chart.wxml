@@ -1,0 +1,75 @@
+<view class="container">
+  <view class="container-box">
+    <view class="header-title">
+      <view class="header-title-x header-title-1x">
+        <view>本月总件数</view>
+        <view>45</view>
+      </view>
+      <navigator  url="/pages/finishDeal/finishDeal" class="header-title-x header-title-2x">
+        <view>已处理</view>
+        <view>45</view>
+      </navigator>
+      <navigator  url="/pages/notDeal/notDeal" class="header-title-x header-title-3x">
+        <view>待处理</view>
+        <view>45</view>
+      </navigator>
+    </view>
+  </view>
+  <view class="ducha">
+	  <h6>督查数据</h6>
+	  <view class="ducha-1x">
+      <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas" bindtouchstart="touchHandler"></canvas>
+    </view>
+  </view>
+  
+  <view class="correct">
+	  <h5>检查合格率 (本月)</h5>
+  	  <view>
+		  <canvas canvas-id="ringCanvas" class="canvas"></canvas>
+	  </view>
+  </view>
+
+  <view class="top">
+    <h6>TOP 5 物业服务企业</h6>
+    <ul>
+      <li>A 物业</li>
+      <li>B 物业</li>
+      <li>C 物业</li>
+      <li>D 物业</li>
+      <li>E 物业</li>
+    </ul>
+  </view>
+
+  <view class="buhege">
+    <view class="buhege-1x">
+      <view class="buhege-1x-1x">
+        巡检不合格项目排行榜
+      </view>
+      <view class="buhege-1x-2x">
+        <view class="benyue {{monthActive?'active':''}}" bindtap="benyue">
+          本月
+        </view>
+        <view class="benyue00 xiayue {{!monthActive?'active':''}}" bindtap="shangyue">
+          上月
+        </view>
+      </view>
+    </view>
+
+    <view class="buhege-2x">
+      <ul>
+        <li wx:for="{{buhegeLists}}" wx:key="{{item.content}}">
+          <view class="buhege-progress-1x">{{index+1}}</view>
+          <view class="buhege-progress-2x">{{item.content}}</view>
+          <view class="buhege-progress-3x">{{item.shuliang}}</view>
+          <view class="buhege-progress-4x">
+            <progress color="#0076FF" percent="40" stroke-width="6" border-radius="10rpx" active />
+          </view>
+        </li>
+      </ul>
+    </view>
+
+  </view>
+
+  <bottom-view inner-text="chart"></bottom-view>
+</view>
+

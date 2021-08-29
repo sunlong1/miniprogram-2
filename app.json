@@ -1,0 +1,26 @@
+{
+  "pages":[
+	"pages/login/login",
+    "pages/chart/chart",
+    "pages/shenhe/shenhe",
+    
+    "pages/finishDeal/finishDeal",
+    "pages/notDeal/notDeal",
+    "pages/zongjie/zongjie",
+    "pages/xunjian/xunjian",
+    
+    "pages/dengji/dengji",
+    "pages/success/success",
+    
+    "pages/register/register",
+    "pages/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarTitleText": "住在浉河",
+    "navigationBarTextStyle": "white",
+	"navigationBarBackgroundColor": "#0076FF"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

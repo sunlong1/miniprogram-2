@@ -1,0 +1,43 @@
+<!--login.wxml-->
+<view class="shenhe-container">
+    <!-- <view class="container-title">浉河区物业管理科单项案件处理系统</view> -->
+    <view class="section">
+        <view class="section-1x">
+            <cover-image class="section-1x-1x" src="../../assets/person.png"></cover-image>
+            <h6>5.小区内无黄土裸露。</h6>
+        </view>
+
+        <view class="section-2x">
+            <view class="section-2x-1x">
+                <h6>检查时照片</h6>
+                <cover-image class="section-img" src="../../assets/person.png"></cover-image>
+            </view>
+            <view class="section-2x-1x section-2x-2x">
+                <h6>整改后照片</h6>
+                <cover-image class="section-img" src="../../assets/person.png"></cover-image>
+            </view>
+        </view>
+
+        <form bindsubmit="login">
+            <view class="page-section">
+                <view class="weui-cells weui-cells_after-title">
+                    <radio-group class="radio-group" bindchange="radioChange">
+                        <label class="weui-cell weui-check__label" wx:for="{{items}}" wx:key="{{item.value}}">
+
+                        <view class="weui-cell__hd">
+                            <radio color="#0076FF" value="{{item.value}}" checked="{{item.checked}}"/>
+                        </view>
+                        <view class="weui-cell__bd">{{item.name}}</view>
+                        </label>
+                    </radio-group>
+                </view>
+            </view>
+
+            <view class="btn-sect">
+                <button class="submit" form-type="submit">确认提交</button>
+                <!-- <button bindtap="wxlogin">取消</button> -->
+            </view>
+        </form>
+    </view>
+    <bottom-view inner-text="xunjian"></bottom-view>
+</view>

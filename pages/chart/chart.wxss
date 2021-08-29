@@ -1,0 +1,120 @@
+.container {
+  width: 100%;
+}
+.container-box {
+  width: 100%;
+  padding: 40rpx 50rpx;
+  box-sizing: border-box;
+}
+.header-title {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  width: 100%;
+  font-size: 24rpx;
+}
+.header-title .header-title-x {
+  width: 200rpx;
+  border-radius: 10rpx;
+  padding: 20rpx 0;
+  text-align: center;
+  box-shadow: 0 -2px 10px 0 rgba(0,0,0,0.10);
+}
+.header-title-1x {
+  background-color: rgba(52, 169, 255, 88);
+}
+.header-title-2x {
+  background-color: rgba(52, 255, 60, 88);
+}
+.header-title-3x {
+  background-color: rgba(255, 52, 52, 88);
+}
+.ducha {
+  padding: 20rpx 30rpx;
+}
+.ducha  h6 {
+  padding-bottom: 30rpx;
+}
+.ducha-1x {
+  width: 100%;
+}
+.ducha-1x canvas {
+  width: 100%;
+}
+.correct {
+  padding: 20rpx 30rpx;
+}
+.top {
+  padding: 20rpx 30rpx;
+}
+.top ul{
+  display: flex;
+  flex-direction: column;
+}
+.top ul li {
+  padding-left: 30rpx;
+  line-height: 50rpx;
+}
+.buhege {
+  padding: 20rpx 30rpx 140rpx;
+}
+.buhege-1x {
+  display: flex;
+  justify-content: space-between;
+}
+.buhege-1x-2x {
+  display: flex;
+}
+.buhege-2x ul {
+  display: flex;
+  flex-direction: column;
+}
+.buhege-2x ul li {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80rpx;
+  border-bottom: 1px solid #f4f4f4;
+}
+.buhege-progress-1x {
+  width: 10%;
+  text-align: center;
+}
+.buhege-progress-2x {
+  width: 40%;
+  text-align: center;
+}
+.buhege-progress-3x {
+  width: 20%;
+  text-align: center;
+}
+.buhege-progress-4x {
+  width: 30%;
+  text-align: center;
+}
+.buhege-1x-2x {
+  overflow: hidden;
+}
+.benyue {
+  width: 80rpx;
+  text-align: center;
+  border: 1px solid #f4f4f4;
+  border-top-left-radius: 10rpx;
+  border-bottom-left-radius: 10rpx;
+  font-size: 26rpx;
+}
+.benyue00 {
+  border: 1px solid #f4f4f4;
+  font-size: 26rpx;
+  width: 80rpx;
+  text-align: center;
+}
+.xiayue {
+  border-top-right-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+}
+.buhege-1x-2x .active {
+  color: var(--themeColor);
+  border: 1px solid var(--themeColor);
+}

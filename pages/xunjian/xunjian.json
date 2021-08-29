@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "bottom-view": "../../components/bottom/bottom"
+  },
+  "navigationBarTitleText": "浉河区物业小区巡查督导系统",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#0076FF"
+}

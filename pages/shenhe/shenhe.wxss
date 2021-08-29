@@ -1,0 +1,42 @@
+.btn-sect{
+  width: 80%;
+  margin: auto;
+  margin: 120rpx auto 0 auto;
+}
+.btn-sect button{
+  margin: 30rpx auto;
+}
+.btn-sect .submit{
+  background-color: var(--themeColor);
+  color: #ffffff;
+}
+.shenhe-container {
+  padding: 30rpx;
+}
+.weui-cell {
+  display: flex;
+  padding-right: 40rpx;
+}
+.radio-group  {
+  display: flex;
+  align-items: center;
+  height: 60rpx;
+}
+.section-1x {
+  display: flex;
+}
+.section-1x-1x {
+  width: 200rpx;
+}
+.section-1x h6 {
+  padding: 50rpx 20rpx;
+}
+.section-2x {
+  display: flex;
+  justify-content: space-between;
+  padding: 40rpx 0;
+}
+.section-2x-1x {
+  width: 48%;
+  text-align: center;
+}

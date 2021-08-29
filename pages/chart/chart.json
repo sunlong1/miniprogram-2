@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "bottom-view": "../../components/bottom/bottom"
+  },
+  "navigationBarTitleText": "工作台",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#0076FF"
+}

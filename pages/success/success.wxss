@@ -1,0 +1,26 @@
+.container-box {
+  text-align: center;
+}
+.container-box .icon{
+  padding: 100rpx 0 10rpx;
+}
+.container-box  h6 {
+  font-size: 30rpx;
+  line-height: 100rpx;
+}
+.navitor {
+  color: var(--themeColor);
+  margin: 10rpx 0 200rpx;
+}
+.btn-sect{
+  width: 80%;
+  margin: auto;
+  margin: 40rpx auto;
+}
+.btn-sect button{
+  margin: 30rpx auto;
+}
+.btn-sect .submit{
+  background-color: var(--themeColor);
+  color: #ffffff;
+}

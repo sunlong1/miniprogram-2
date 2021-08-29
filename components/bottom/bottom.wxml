@@ -1,0 +1,30 @@
+<view class="inner">
+  <ul>
+	  <li class="{{innerText==='chart'?'active':''}}">
+		  <navigator url="/pages/chart/chart" hover-class="navigator-hover">
+			  <cover-image src="{{innerText==='chart'?'../../assets/activeOne.png':'../../assets/one.png'}}" />
+			  <h6>工作台</h6>
+		  </navigator>
+	  </li>
+	  <li class="{{innerText==='xunjian'?'active':''}}">
+	  		  <navigator url="/pages/xunjian/xunjian" hover-class="navigator-hover">
+	  			  <cover-image src="{{innerText==='xunjian'?'../../assets/activeEye.png':'../../assets/eye.png'}}" />
+				  <h6>巡检</h6>
+	  		  </navigator>
+	  </li>
+	  <li class="{{innerText==='dengji'?'active':''}}">
+	  		  <navigator url="/pages/dengji/dengji" hover-class="navigator-hover">
+	  			  <cover-image src="{{innerText==='dengji'?'../../assets/activePerson.png':'../../assets/person.png'}}" />
+				  <h6>登记</h6>
+	  		  </navigator>
+	  </li>
+	  <li class="{{innerText==='zongjie'?'active':''}}">
+	  		  <navigator url="/pages/zongjie/zongjie" hover-class="navigator-hover">
+	  			  <cover-image src="{{innerText==='zongjie'?'../../assets/activeFinal.png':'../../assets/final.png'}}" />
+				  <h6>总结</h6>
+	  		  </navigator>
+	  </li>
+  </ul>
+</view>
+<slot></slot>
+

@@ -1,0 +1,127 @@
+<!--login.wxml-->
+<view class="container">
+    <!-- <view class="container-title">浉河区物业管理科单项案件处理系统</view> -->
+    <view class="section">
+        <form bindsubmit="login">
+            <view class="input-sect">
+				<view class="label">
+					<h6>小区名称</h6>
+					<input name="village" placeholder="请输入小区名称" placeholder-class="placeholder"/>
+				</view>
+                <view class="label">
+					<h6>物业服务企业</h6>
+					<input name="company" placeholder="请输入物业服务企业名称" placeholder-class="placeholder"/>
+                </view>
+                <view class="label">
+					<h6>+86</h6>
+					<input name="phone" placeholder="请填写手机号码" placeholder-class="placeholder"/>
+                </view>
+                <view class="label">
+					<h6>日期</h6>
+					<input name="data" placeholder="请输入日期" placeholder-class="placeholder"/>
+                </view>
+                <view class="label">
+					<h6>地址</h6>
+					<input name="data" placeholder="请输入地址" placeholder-class="placeholder"/>
+                </view>
+
+                <view class="biaozhun">
+                    <view class="biaozhun-1x">物业服务标准</view>
+                    <view class="biaozhun-xx">
+                        <view class="biaozhun-2x">
+                        <ul>
+                            <li>
+                                <view class="left">检查项目</view>
+                                <view class="right">拍照取证</view>
+                            </li>
+                            <li>
+                                <view class="left">1.按河南省物业管理条例第39条规定，在小区显著位置公示相关信息。</view>
+                                <view class="right"><cover-image src='../../assets/camera.png'/></view>
+                            </li>
+                            <li>
+                                <view class="left">2.卫生保洁到位、地面无散落垃圾、电梯间无异味、楼道无杂物堆放及车辆停放。</view>
+                                <view class="right"><cover-image src='../../assets/camera.png'/></view>
+                            </li>
+                            <li>
+                                <view class="left">3.生活垃圾、建筑垃圾定点投放分类收集，垃圾房、箱(桶)整洁、无破损、垃圾清运及时。</view>
+                                <view class="right"><cover-image src='../../assets/camera.png'/></view>
+                            </li>
+                            <li>
+                                <view class="left">4.物业工作人员统一着装，持证上岗、挂牌服务。</view>
+                                <view class="right"><cover-image src='../../assets/camera.png'/></view>
+                            </li>
+                            <li>
+                                <view class="left">5.小区内无黄土裸露。</view>
+                                <view class="right"><cover-image src='../../assets/camera.png'/></view>
+                            </li>
+                            <li>
+                                <view class="left">6.小区无内乱贴、乱画、乱放、小广告多。</view>
+                                <view class="right"><cover-image src='../../assets/camera.png'/></view>
+                            </li>
+                            <li>
+                                <view class="left">7.建立装修、装饰跟进巡查制度。</view>
+                                <view class="right"><cover-image src='../../assets/camera.png'/></view>
+                            </li>
+                            <li>
+                                <view class="left">8.设置《信阳文明20条》宣传栏。</view>
+                                <view class="right"><cover-image src='../../assets/camera.png'/></view>
+                            </li>
+                        </ul>
+                    </view>
+                    </view>
+                </view>
+
+                <view class="biaozhun">
+                    <view class="biaozhun-1x">消防安全检查</view>
+                    <view class="biaozhun-xx">
+                        <view class="biaozhun-2x">
+                        <ul>
+                            <li>
+                                <view class="left">检查项目</view>
+                                <view class="right">拍照取证</view>
+                            </li>
+                            <li>
+                                <view class="left">1.楼梯间不得堆放杂物及车辆停放，存在消防安全隐患。</view>
+                                <view class="right"><cover-image src='../../assets/camera.png'/></view>
+                            </li>
+                            <li>
+                                <view class="left">2.按要求配备持证消防员。</view>
+                                <view class="right"><cover-image src='../../assets/camera.png'/></view>
+                            </li>
+                            <li>
+                                <view class="left">3.按要求配备持证电梯管理安全员。</view>
+                                <view class="right"><cover-image src='../../assets/camera.png'/></view>
+                            </li>
+                            <li>
+                                <view class="left">4.电梯张贴年检标识、定期年检。</view>
+                                <view class="right"><cover-image src='../../assets/camera.png'/></view>
+                            </li>
+                            <li>
+                                <view class="left">5.消防器材不得缺失，消防器材保养到位。</view>
+                                <view class="right"><cover-image src='../../assets/camera.png'/></view>
+                            </li>
+                            <li>
+                                <view class="left">6.电梯应急呼叫启用，避免存在安全隐患。</view>
+                                <view class="right"><cover-image src='../../assets/camera.png'/></view>
+                            </li>
+                            <li>
+                                <view class="left">7.定期检查消防器具、影响消防设备维修、使用。</view>
+                                <view class="right"><cover-image src='../../assets/camera.png'/></view>
+                            </li>
+                            <li>
+                                <view class="left">8.消防通道画线及标注禁停标识。</view>
+                                <view class="right"><cover-image src='../../assets/camera.png'/></view>
+                            </li>
+                        </ul>
+                    </view>
+                    </view>
+                </view>
+            </view>
+            <view class="btn-sect">
+                <button class="submit" form-type="submit">确认提交</button>
+                <!-- <button bindtap="wxlogin">取消</button> -->
+            </view>
+        </form>
+    </view>
+    <bottom-view inner-text="xunjian"></bottom-view>
+</view>

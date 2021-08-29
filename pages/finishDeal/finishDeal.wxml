@@ -1,0 +1,53 @@
+<view class="container">
+  <!-- <view class="container-title">我的已处理</view> -->
+  <view class="choose-box">
+    <view class="choose-box-1x">
+      <ul>
+        <li 
+        wx:for="{{items}}" 
+        class="{{activeOne===index?'active':''}}" 
+        bindtap="choiceDate" 
+        wx:key="index"
+        id="{{index}}">{{item.name}}</li>
+      </ul>
+    </view>
+    <view class="choose-box-1x">
+      <ul>
+        <li 
+        wx:for="{{itemsOne}}" 
+        class="{{activeTwo===index?'active':''}}" 
+        bindtap="choiceOther" 
+        wx:key="index"
+        id="{{index}}">{{item.name}}</li>
+      </ul>
+    </view>
+  </view>
+  <view></view>
+  <view class="container-box">
+    <view class="container-ul">
+      <ul>
+        <li>
+          <view class="ul-box">
+            <view class="ul-left">
+              <view class="ul-left-1x"><span>湖东春天</span></view>
+              <view class="ul-left-2x">
+                <view class="ul-left-2x-1x">
+                  <view>XXXX小区物业整改通知单</view>
+                  <p>住建局负责人：XXX</p>
+                </view>
+              </view>
+            </view>
+            <view class="ul-right">
+              <view class="ul-right-1x">
+                <view>11月13日</view>
+                <view>完成日期：2021-02-09</view>
+              </view>
+            </view>
+          </view>
+        </li>
+      </ul>
+    </view>
+    
+  </view>
+</view>
+

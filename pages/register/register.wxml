@@ -1,0 +1,6 @@
+<view class="container">
+  <!-- 组件引入 -->
+  <!-- <header  my-property="登录"></header>  -->
+  <h6>注册页面</h6>
+</view>
+

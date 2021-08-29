@@ -1,0 +1,87 @@
+.container-title {
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: var(--themeColor);
+  text-align: center;
+  color: #fff;
+}
+.container-box {
+  padding: 0 20rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.container-ul {
+  width: 100%;
+}
+.container-ul ul {
+  width: 100%;
+}
+.container-ul ul .ul-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #f4f4f4;
+}
+.ul-box .ul-left {
+  display: flex;
+}
+.ul-box .ul-left .ul-left-1x {
+  width: 80rpx;
+  height: 100rpx;
+  padding: 5rpx 10rpx;
+  background-color: var(--themeColor);
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+.ul-left-2x {
+  font-size: 25rpx;
+  padding-left: 20rpx;
+  display: flex;
+  align-items: center;
+}
+.ul-left-2x p {
+  font-size: 24rpx;
+}
+.ul-right {
+  color: rgba(187, 187, 187, 100);
+  font-size: 20rpx;
+  text-align: right;
+  display: flex;
+  align-items: center;
+}
+/* 选择框样式 */
+.choose-box {
+  padding: 20rpx 20rpx;
+}
+.choose-box-1x {
+  border: 1px solid #f4f4f4;
+  border-radius: 14rpx;
+  margin-bottom: 20rpx;
+  overflow: hidden;
+}
+.choose-box-1x ul {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+.choose-box-1x ul li {
+	width: 25%;
+	line-height: 40rpx;
+	font-size: 26rpx;
+}
+.choose-box-1x ul li:not(:last-child) {
+	border-right: 1px solid #f4f4f4;
+}
+.choose-box-1x ul .active {
+	background-color: var(--themeColor);
+	color: #FFFFFF;
+}
+.ul-right-1x {
+  line-height: 35rpx;
+}
+.ul-left-2x-1x {
+  line-height: 45rpx;
+}

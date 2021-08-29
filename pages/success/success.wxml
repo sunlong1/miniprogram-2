@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="container-box">
+    <view><icon class="icon" type="success" size="60"></icon></view>
+    <h6>所提交内容已保存成功</h6>
+    <view class="navitor" bindtap="again">再写一页</view>
+  </view>
+  <view class="btn-sect">
+    <button class="submit" form-type="submit" bindtap="jump">返回首页</button>
+  </view>
+</view>
+

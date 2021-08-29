@@ -1,0 +1,67 @@
+<!--login.wxml-->
+<view class="container">
+    <!-- <view class="container-title">浉河区物业管理科单项案件处理系统</view> -->
+    <view class="section">
+        <form bindsubmit="login">
+            <view class="input-sect">
+				<view class="label">
+					<h6>主题</h6>
+					<input name="title" placeholder="请输入主题名称" placeholder-class="placeholder"/>
+				</view>
+                <view class="label">
+					<h6>来访人员</h6>
+					<input name="name" placeholder="请输入来访人员名称" placeholder-class="placeholder"/>
+                </view>
+                <view class="label">
+					<h6>房屋信息</h6>
+					<input name="house" placeholder="请填写相关信息" placeholder-class="placeholder"/>
+                </view>
+                <view class="label">
+					<h6>联系方式</h6>
+					<input name="phone" placeholder="请填写手机号码" placeholder-class="placeholder"/>
+                </view>
+                <view class="jiange"></view>
+                <view class="label">
+					<h6>小区名称</h6>
+					<input name="village" placeholder="请输入小区名称" placeholder-class="placeholder"/>
+                </view>
+                <view class="label">
+					<h6>物业服务企业</h6>
+					<input name="villageService" placeholder="请输入物业服务企业名称" placeholder-class="placeholder"/>
+                </view>
+                <view class="label">
+					<h6>小区地址</h6>
+					<input name="villageAddress" placeholder="请填写手机号码" placeholder-class="placeholder"/>
+                </view>
+                <view class="jiange"></view>
+                <view class="detail">
+                  <h6>详情</h6>
+                  <!-- <input name="detail" placeholder="日期" placeholder-class="placeholder"/> -->
+                  <textarea placeholder="请输入文字..." style="height:300rpx;" maxlength="500" name="detail"/>
+                </view>
+                <view class="detail">
+                  <h6>图片上传</h6>
+                  <view class="suggest-camera-area">
+                    <view class="camera {{num == 0 ? 'hide':''}}" bindtap="upLoadImage">
+                    <text class="iconfont icon-camera"></text>
+                    </view>
+                    <block wx:for="{{imageUrl}}" wx:key="key">
+                    <view class="camera {{num == 0 ? 'show':'hide'}}">    
+                        <image data-index="{{index}}" style="width: 140rpx; height: 140rpx; background-color: #eeeeee" src="{{item}}" bindtap="preImage"  mode="aspectFill"></image>
+                        <text data-index="{{index}}" class="close iconfont icon-close" bindtap="removeImage"></text>
+                    </view>
+                    </block>
+                    <view class="camera add {{addNum == 0 ? 'show':'hide'}}" bindtap="upLoadImage">
+                    <text class="iconfont icon-jia"></text>
+                    </view>
+                </view>
+                </view>
+            </view>
+            <view class="btn-sect">
+                <button class="submit" form-type="submit">保存</button>
+                <!-- <button bindtap="wxlogin">取消</button> -->
+            </view>
+        </form>
+    </view>
+    <bottom-view inner-text="dengji"></bottom-view>
+</view>

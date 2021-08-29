@@ -1,0 +1,44 @@
+<view class="container">
+  <!-- 组件引入 -->
+  <!-- <header  my-property="登录"></header>  -->
+  <view class="login-title">
+    <view>浉河区住房和城乡建设局物业</view><view>管理日常督查系统</view>
+  </view>
+  <!-- 手机登录注册 -->
+  <view class="phone" hidden='{{!phoneLoginIsShow}}'>
+    <view class="box">
+      <view class="phone-box">
+		<form bindsubmit="login">
+			<view class="phone-num">
+			  <input name="phone" class="weui-input font-16" placeholder="请输入手机号"/>
+			</view>
+			<view class="code">
+			  <input name="code" class="weui-input font-16" placeholder="请输入验证码"/>
+			  <view class="get-code font-12">
+			    <view bindtap="getCode" hidden="{{getCodeIsShow}}">{{codeText}}</view>
+			    <view hidden="{{!getCodeIsShow}}">{{secondCode}}秒后重发</view>
+			  </view>
+			</view>
+			<button class="phone-login-btn font-18" form-type="submit">
+			  登 录
+			</button>
+		</form>
+      </view>
+      <view class="register">
+        <navigator url="../register/register" open-type="navigate" class="uploader-text">
+        <text>立即注册</text>
+        </navigator>
+      </view>
+      <!--微信登陆 -->
+      <view class="userinfo">
+        <button open-type="getUserInfo" 
+          bindgetuserinfo="getUserInfo"
+          class="wx-button font-18"
+          style="width:90%;"
+          >
+          微信用户一键登录</button>
+      </view>
+    </view>
+  </view>
+</view>
+

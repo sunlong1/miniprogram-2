@@ -1,0 +1,15 @@
+<!--login.wxml-->
+<view class="container">
+    <view class="zongjie-container">
+    <ul>
+        <li>个人信息</li>
+        <li>角色审核</li>
+        <li>项目筛选</li>
+        <li>项目设计</li>
+        <li>XXXXXX</li>
+        <li>XXXXXX</li>
+        <li>注销登陆</li>
+    </ul>
+</view>
+<bottom-view inner-text="zongjie"></bottom-view>
+</view>

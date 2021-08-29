@@ -1,0 +1,95 @@
+/**index.wxss**/
+.container {
+  padding: 10rpx 20rpx;
+  box-sizing: border-box;
+}
+.wx-button{
+  border-radius: 10rpx;
+  background: var(--themeColor);
+  color: #fff;
+  font-weight: 200;
+}
+.phone-login{
+  color: var(--themeColor);
+  text-align: center;
+  margin-top: 30rpx;
+}
+.login-title {
+  background-color: var(--themeColor);
+  padding: 40rpx 30rpx;
+  color: #fff;
+  width: 560rpx;
+  border-radius: 10rpx;
+  text-align: center;
+  margin-top: 50rpx;
+}
+.phone-box{
+  background: #fff;
+  /* position: absolute;
+  top:50%;
+  left: 50%; */
+  width:560rpx;
+  /* margin-left: -310rpx;
+  margin-top: -140rpx; */
+  padding:60rpx 0 40rpx;
+  border-radius: 10rpx;
+}
+.phone-num,.code{
+  border-bottom: 1px solid #A9A9A9;
+  padding:25rpx 0;
+  margin-top: 20rpx;
+}
+.weui-input{
+  padding:10rpx 0;
+}
+.code{
+  position: relative;
+}
+.get-code{
+  border-radius: 10rpx;
+  border:1px solid #A9A9A9;
+  color:#A9A9A9;
+  width:162rpx;
+  padding:16rpx 0;
+  text-align: center;
+  position: absolute;
+  top:27rpx;
+  right:0;
+  z-index: 9;
+  font-size: 26rpx;
+}
+.phone-login-btn{
+  background-color: var(--themeColor);
+  color:#fff;
+  text-align: center;
+  margin-top: 30rpx;
+  padding:15rpx 0;
+  border-radius: 10rpx;
+  font-weight: 500;
+  width: 200rpx !important;
+  font-weight: normal;
+}
+.register {
+  color: var(--themeColor);
+  text-align: right;
+  margin-bottom: 100rpx;
+}
+.close{
+  width:80rpx;
+  height:80rpx;
+  margin: 40rpx auto ;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 10rpx;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}

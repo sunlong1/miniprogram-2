@@ -1,0 +1,57 @@
+<view class="container">
+  <!-- <view class="container-title">我的已处理</view> -->
+  <view class="choose-box">
+    <view class="choose-box-1x">
+      <ul>
+        <li 
+        wx:for="{{items}}" 
+        class="{{activeOne===index?'active':''}}" 
+        bindtap="choiceDate" 
+        wx:key="index"
+        id="{{index}}">{{item.name}}</li>
+      </ul>
+    </view>
+    <view class="choose-box-1x">
+      <ul>
+        <li 
+        wx:for="{{itemsOne}}" 
+        class="{{activeTwo===index?'active':''}}" 
+        bindtap="choiceOther" 
+        wx:key="index"
+        id="{{index}}">{{item.name}}</li>
+      </ul>
+    </view>
+  </view>
+  <view></view>
+  <view class="container-box">
+    <view class="container-wait">
+      <ul>
+        <li wx:for="{{waitList}}" wx:key="key">
+          <view class="wait-one">
+            <view class="wait-one-1x">{{item.xiaoqu}}</view>
+            <view class="wait-one-2x"> <cover-image src="../../assets/delete.png" /></view>
+          </view>
+          <view class="wait-two">
+            <view class="wait-two-2x">
+              <span>建立日期：{{item.startData}}</span>
+              <span class="wait-two-1x">截至日期：{{item.endData}}</span>
+            </view>
+            <view class="wait-two-3x">
+              <view  class="wait-two-4x">住建局负责人：{{item.fuzeren}}</view>
+              <view  class="wait-two-5x"> <cover-image src="../../assets/right.png" /></view>
+            </view>
+            <view>物业服务企业负责人：XXX</view>
+          </view>
+          <view class="wait-three">
+            <view>
+              <navigator url="/pages/shenhe/shenhe" hover-class="navigator-hover">有新的信息待审核</navigator></view>
+            <view>将到期</view>
+            <view class="wait-three-1x"><cover-image src="../../assets/delete.png" /></view>
+          </view>
+        </li>
+      </ul>
+    </view>
+    
+  </view>
+</view>
+

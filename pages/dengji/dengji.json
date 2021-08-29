@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "bottom-view": "../../components/bottom/bottom"
+  }, 
+  "navigationBarTitleText": "浉河区物业管理科单项案件处理系统",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#0076FF"
+}
